@@ -1,0 +1,97 @@
+.benefits {
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  z-index: 5;
+}
+
+.position-relative {
+  position: relative;
+  z-index: 2;
+}
+
+.benefits-header {
+  margin-bottom: 4rem;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.benefit-card {
+  text-align: center;
+  padding: 4rem 2.5rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3), inset 0 0 20px rgba(255,255,255,0.02);
+  transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.benefit-card:hover {
+  transform: translateY(-10px);
+  border-color: rgba(226, 192, 141, 0.4);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.5), 0 0 30px rgba(226, 192, 141, 0.1);
+}
+
+/* Wrapper for the full-color JPG symbols */
+.benefit-icon-wrapper {
+  width: 90px;
+  height: 90px;
+  margin: 0 auto 1.5rem;
+  border-radius: 50%;
+  padding: 0;
+  background: #ffffff; /* White background to seamlessly hide JPG corners */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all var(--transition-smooth);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.benefit-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.15); /* Scales the image slightly to crop out built-in white borders */
+  mix-blend-mode: multiply; /* Blends any off-white pixels precisely into the white background */
+  border-radius: 50%;
+  transition: transform var(--transition-smooth);
+}
+
+.benefit-card:hover .benefit-icon-wrapper {
+  background: var(--color-accent);
+  border-color: rgba(226, 192, 141, 0.5);
+  box-shadow: 0 0 30px rgba(226, 192, 141, 0.4);
+}
+
+.benefit-card:hover .benefit-icon-img {
+  transform: scale(1.25) rotate(5deg);
+}
+
+.benefit-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+}
+
+.benefit-desc {
+  font-size: 1.05rem;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}
