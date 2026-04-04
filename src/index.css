@@ -10,6 +10,7 @@
   --glass-border-bright: rgba(255, 255, 255, 0.2);
   
   --color-primary: #759B63; /* Glowing organic green */
+  --color-primary-dark: #3A4E31; /* Deep green for contrast */
   --color-primary-glow: rgba(117, 155, 99, 0.3);
   --color-accent: #E2C08D;
   

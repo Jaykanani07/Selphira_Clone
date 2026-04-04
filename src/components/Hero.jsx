@@ -23,23 +23,27 @@ const Hero = () => {
         </div>
 
         <div className="hero-premium-visuals">
-          <div className="visual-primary animate-fade-in-up delay-200">
+          <div className="visual-primary">
             <img
               src={heroImage1}
               alt="Selphira Ayurvedic Products"
+              width="600"
+              height="800"
               fetchPriority="high"
               loading="eager"
             />
           </div>
-          <div className="visual-secondary animate-fade-in-up delay-300">
+          <div className="visual-secondary">
             <img
               src={heroImage2}
               alt="Selphira Natural Ingredients"
+              width="600"
+              height="800"
               fetchPriority="high"
               loading="eager"
             />
           </div>
-          <div className="visual-badge animate-fade-in-up delay-300">
+          <div className="visual-badge">
             <span className="badge-text">Selphira</span>
           </div>
         </div>
