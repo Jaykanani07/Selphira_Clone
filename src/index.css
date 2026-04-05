@@ -254,3 +254,18 @@ img {
 .toast-notification svg {
   color: var(--color-primary);
 }
+
+/* Mobile Performance Overrides */
+@media (max-width: 768px) {
+  /* Disable heavy glowing background orbs computation */
+  body::before, body::after {
+    display: none !important;
+  }
+  
+  /* Disable expensive backdrop filters across the board for mobile */
+  *, *::before, *::after {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+}
+

@@ -192,6 +192,10 @@
   .mobile-menu-btn {
     display: flex;
   }
+
+  .navbar {
+    background-color: var(--color-bg);
+  }
   
   .nav-links {
     position: absolute;
