@@ -30,9 +30,10 @@ Redesign the Selphira homepage focusing on performance, scalability, and improve
 ---
 
 ##  Average performance score after multiple runs
-- Performance: XX
-- LCP: XXs
-- CLS: XX
+- Performance: 98
+- Accessibility: 94
+- Best Practices: 100
+- SEO: 100
 
 ---
 
