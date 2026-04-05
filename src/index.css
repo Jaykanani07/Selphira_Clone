@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap');
 
 :root {
-  /* Next Gen Obsidian Glass Theme */
   --color-bg: #030404;
   
   --glass-bg: rgba(255, 255, 255, 0.02);
@@ -9,13 +8,13 @@
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-border-bright: rgba(255, 255, 255, 0.2);
   
-  --color-primary: #759B63; /* Glowing organic green */
-  --color-primary-dark: #3A4E31; /* Deep green for contrast */
+  --color-primary: #759B63; 
+  --color-primary-dark: #3A4E31; 
   --color-primary-glow: rgba(117, 155, 99, 0.3);
   --color-accent: #E2C08D;
   
   --color-text: #FFFFFF;
-  --color-text-muted: #A0A29F; /* Updated for WCAG AA compliant contrast ratio */
+  --color-text-muted: #A0A29F; 
 
   /* Typography */
   --font-heading: 'Playfair Display', serif;
@@ -207,7 +206,6 @@ img {
 .delay-400 { transition-delay: 0.4s; animation-delay: 0.4s; }
 .delay-500 { transition-delay: 0.5s; animation-delay: 0.5s; }
 
-/* Custom Scrollbar */
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -222,7 +220,6 @@ img {
   background: var(--color-primary);
 }
 
-/* Toast Notification Override for Dark Mode */
 .toast-notification {
   position: fixed;
   bottom: 30px;
@@ -255,14 +252,11 @@ img {
   color: var(--color-primary);
 }
 
-/* Mobile Performance Overrides */
 @media (max-width: 768px) {
-  /* Disable heavy glowing background orbs computation */
   body::before, body::after {
     display: none !important;
   }
   
-  /* Disable expensive backdrop filters across the board for mobile */
   *, *::before, *::after {
     backdrop-filter: none !important;
     -webkit-backdrop-filter: none !important;
